@@ -228,3 +228,11 @@ body {
   opacity: 0;
   transition: opacity 0.3s;
 }
+
+.js-tabcontent section{
+  display: none;
+}
+
+.js-tabcontent section.ativo{
+  display: block !important;
+}
