@@ -95,6 +95,10 @@ body {
   grid-column: 2;
 }
 
+.animais-lista li{
+  cursor: pointer;
+}
+
 .animais-lista::-webkit-scrollbar {
   width: 18px;
 }
@@ -204,10 +208,16 @@ body {
   .copy {
     margin-bottom: 0px;
   }
+  .grid-section{
+    display: flex;
+    flex-direction: column;
+  }
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+  }
 }
-
-
-
 
 .tooltip {
   position: relative;
