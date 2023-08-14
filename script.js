@@ -1,5 +1,6 @@
 // Script para exibir tooltip ao passar o mouse sobre as imagens
-const tooltips = document.querySelectorAll(".tooltip");
+function initTooltip(){
+  const tooltips = document.querySelectorAll(".tooltip");
 tooltips.forEach((tooltip) => {
   const tooltipText = tooltip.querySelector(".tooltiptext");
   tooltip.addEventListener("mousemove", (event) => {
@@ -17,20 +18,51 @@ tooltips.forEach((tooltip) => {
     tooltipText.style.opacity = "0";
   });
 });
+}
+initTooltip()
+
 
 //navegação entra tabs
-const tabMenu = document.querySelectorAll('.js-tabmenu li');
-const tabContent = document.querySelectorAll('.js-tabcontent section');//descricao
+function initTabNav(){
+  const tabMenu = document.querySelectorAll('.js-tabmenu li');
+  const tabContent = document.querySelectorAll('.js-tabcontent section');//descricao
+  
+  if (tabMenu.length && tabContent.length) {
+    tabContent[0].classList.add('ativo')
+  
+    function activeTab(index) {
+      tabContent.forEach((section) => {
+        section.classList.remove('ativo');
+      });
+      tabContent[index].classList.add('ativo');
+    }
+  
+    tabMenu.forEach((itemMenu, index) => {
+      itemMenu.addEventListener('click', function () {
+        activeTab(index);
+      });
+    });
+  }
+}
+initTabNav()
 
-function activeTab(index){
-  tabContent.forEach((section)=>{
-    section.classList.remove('ativo');
-  });
-  tabContent[index].classList.add('ativo');
+function initAcordion(){
+
+const accordionList = document.querySelectorAll('.js-accordion dt');
+
+if(accordionList.length){
+accordionList[0].classList.add('ativo');
+accordionList[0].nextElementSibling.classList.add('ativo');
+
+function activeAccordion(){
+  this.classList.toggle('ativo');
+  this.nextElementSibling.classList.toggle('ativo');
 }
 
-tabMenu.forEach((itemMenu, index)=>{
-  itemMenu.addEventListener('click',function(){
-    activeTab(index);
-  });
+accordionList.forEach((item)=>{
+  item.addEventListener('click', activeAccordion);
+
 });
+}
+}
+initAcordion()
