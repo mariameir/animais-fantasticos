@@ -45,4 +45,4 @@ Para visualizar o projeto localmente, siga as instruções abaixo:
 - Ícone do Favicon: `img/favicon-32x32.png`
 
 ## Curso Origamid
-Este projeto foi desenvolvido durante o curso de desenvolvimento front-end da Origamid (www.origamid.com), uma plataforma de ensino online especializada em desenvolvimento web e UI Design.
+Este projeto foi desenvolvido durante o curso de desenvolvimento front-end da [Origamid](www.origamid.com), uma plataforma de ensino online especializada em desenvolvimento web e UI Design.
