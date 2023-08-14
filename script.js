@@ -36,7 +36,6 @@ function initTabNav(){
       });
       tabContent[index].classList.add('ativo');
     }
-  
     tabMenu.forEach((itemMenu, index) => {
       itemMenu.addEventListener('click', function () {
         activeTab(index);
@@ -46,8 +45,8 @@ function initTabNav(){
 }
 initTabNav()
 
-function initAcordion(){
 
+function initAcordion(){
 const accordionList = document.querySelectorAll('.js-accordion dt');
 
 if(accordionList.length){
@@ -61,8 +60,8 @@ function activeAccordion(){
 
 accordionList.forEach((item)=>{
   item.addEventListener('click', activeAccordion);
-
 });
-}
-}
-initAcordion()
+}}
+initAcordion();
+
+
