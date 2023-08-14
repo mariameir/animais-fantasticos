@@ -2,6 +2,7 @@
 
 ## Descrição
 Este projeto foi desenvolvido com o objetivo de aprimorar meus conhecimentos em desenvolvimento web, aplicando conceitos de HTML, CSS e JavaScript. O website "Animais Fantásticos" é uma página informativa sobre diversas espécies de animais, incluindo raposas, esquilos, ursos, lobos, macacos e leões.
+<br>
 [Clique aqui para ver o projeto](https://mariameir.github.io/animais-fantasticos/)
 
 ## Aprendizado e Prática
