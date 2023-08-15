@@ -64,4 +64,8 @@ accordionList.forEach((item)=>{
 }}
 initAcordion();
 
+const linksInternos = document.querySelectorAll(' .js-menu a[href^="#"]')
 
+linksInternos.forEach((links)=>{
+  links.addEventListener('click', scrollToSection)
+})
